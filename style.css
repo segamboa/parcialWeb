@@ -1,0 +1,11 @@
+#hd{
+    font-family: "Satisfy";
+}
+@font-face{
+    font-family: "Satisfy";
+    src: url("Satisfy-Regular.ttf") format("truetype");
+}
+#im{
+    width: 1cm;
+    height: 1cm;
+}
