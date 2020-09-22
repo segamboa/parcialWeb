@@ -1,11 +1,44 @@
-#hd{
-    font-family: "Satisfy";
+#hd {
+  font-family: "Satisfy", cursive;
+  font-size: 42px;
+  margin-top: 15px;
 }
-@font-face{
-    font-family: "Satisfy";
-    src: url("Satisfy-Regular.ttf") format("truetype");
+#im {
+  margin-top: 15px;
 }
-#im{
-    width: 1cm;
-    height: 1cm;
+#carrito {
+  margin-top: 25px;
+}
+@font-face {
+  font-family: "Satisfy";
+  src: url("Satisfy-Regular.ttf") format("truetype");
+}
+#im {
+  height: 45px;
+  width: 45px;
+}
+
+#botones {
+  padding-left: 88%;
+}
+.can {
+  color: black;
+}
+#r {
+  color: black;
+  background-color: red;
+}
+#con,
+#con1 {
+  background-color: bisque;
+}
+
+footer {
+  height: 50px;
+}
+nav {
+  height: 70px;
+}
+#carrito {
+  font-size: 18px;
 }

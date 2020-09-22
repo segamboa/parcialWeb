@@ -16,73 +16,102 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Parcial</title>
   </head>
   <body>
-    <div class="header">
+    <div class="container-fluid">
+      <div class="header">
+        <div class="row">
+          <h1 id="hd" class="col-10">Restaurant & Lounge</h1>
+          <img
+            id="im"
+            src="https://i.imgur.com/1EKrQIi.png"
+            alt="Carro de compras"
+          />
+          <h4 id="carrito" class="col-1">2 items</h4>
+        </div>
+      </div>
+      <hr />
       <div class="row">
-        <h1 id="hd" class="col-10" style="height: 35px">Restauran & Lounge</h1>
         <img
-          id="im"
-          class="col-1"
-          src="/carro.png"
-          alt="Carro de compras"
-          style="height: 60px"
+          class="col-12"
+          src="https://i.imgur.com/S8Ffdqa.png"
+          alt="Banner hamburguesa"
         />
-        <h4 id="carrito"class="col-1" style="font-size: 18px">2 items</h4>
       </div>
-    </div>
-    <hr />
-    <div class="container-fluid" style="width: max-content">
-      <img src="banner.png" alt="Banner hamburguesa" />
-    </div>
-    <hr />
+      <hr />
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a id="burger-navbar"class="navbar-brand" href="#">Burgers</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" id="burg" href="#"
+              >Burger <span class="sr-only">(current)</span></a
+            >
+            <a class="nav-item nav-link" id="tac" href="#">Tacos</a>
+            <a class="nav-item nav-link" id="sal" href="#">Salads</a>
+            <a class="nav-item nav-link" id="des" href="#">Deserts</a>
+            <a class="nav-item nav-link" id="drink" href="#">Drinks & Sides</a>
+          </div>
+        </div>
+      </nav>
 
-          <li class="nav-item active">
-            <a class="nav-link" href="#"id="taco-navbar"
-              >Tacos <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#"id="salad-navbar"
-              >Salads <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#"id="desert-navbar"
-              >Deserts <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#"id="drink-navbar"
-              >Drinks & Sides <span class="sr-only">(current)</span></a
-            >
-          </li>
-        </ul>
+      <hr />
+      <h1 id="titulos" class="text-center"></h1>
+      <hr />
+      <div id="contenido" class="row"></div>
+
+      <div class="modal" tabindex="-1" role="dialog" id="exampleModal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Cancel the order</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Are you sure about cancelling the order?</p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                id="con1"
+                class="btn borrar"
+                data-dismiss="modal"
+              >
+                Yes, i want to cancel the order
+              </button>
+              <button
+                type="button"
+                id="r"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                No, i want to continue adding products.
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
-    </nav>
 
-    <hr>
-
-
-  
+      <hr />
+      <footer class="text-center">
+        <strong
+          >Contact us: +57 3102105253 - info@restaurant.com -
+          @restaurant</strong
+        >
+      </footer>
+    </div>
 
     <script type="module" src="index.js"></script>
     <script
